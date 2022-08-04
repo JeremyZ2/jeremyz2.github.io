@@ -1,7 +1,7 @@
 ---
 layout: post
-title: Hello world
-author: no one cares
+title: >
+    Blogging with title 2
 tags: [Test, Image]
 ---
 # HELLO WORLD
