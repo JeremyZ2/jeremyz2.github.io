@@ -5,7 +5,7 @@ url: "https://jeremyz2.github.io"
 # THEME-SPECIFIC CONFIGURATION
 title: JeremyZ  #Type on Strap                                    # site's title
 description: "A website with blog posts and pages"      # used by search engines
-avatar: assets/img/triangle1.jpeg                       # Empty for no avatar in navbar
+avatar: assets/img/JZ.png                      # Empty for no avatar in navbar
 favicon: assets/favicon.ico                             # Icon displayed in the tab
 
 # Header and footer text
