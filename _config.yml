@@ -3,13 +3,13 @@ baseurl: "/"
 url: "https://jeremyz2.github.io"
 
 # THEME-SPECIFIC CONFIGURATION
-title: Jeremy114514  #Type on Strap                                    # site's title
+title: JeremyZ  #Type on Strap                                    # site's title
 description: "A website with blog posts and pages"      # used by search engines
 avatar: assets/img/triangle.png                         # Empty for no avatar in navbar
 favicon: assets/favicon.ico                             # Icon displayed in the tab
 
 # Header and footer text
-header_text: JEREMY114514  # Change Blog header text
+header_text: JEREMYZ # Change Blog header text
 header_feature_image: assets/img/header/triangular.jpeg
 header_feature_image_responsive: true
 footer_text: >
