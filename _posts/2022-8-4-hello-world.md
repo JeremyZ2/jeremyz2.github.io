@@ -7,7 +7,7 @@ tags: [Test, Image]
 # HELLO WORLD
 <br>
 
-![Keystone stlye pattern](/keystonepattern.jpg)
+![Keystone stlye pattern]("/img/keystonepattern.jpg")
 * 诶嘿嘿嘿嘿
 * 鸡汤来喽
 * 为什么不喝
