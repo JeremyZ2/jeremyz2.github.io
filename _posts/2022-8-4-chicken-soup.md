@@ -3,6 +3,7 @@ layout: post
 title: >
     炊事员
 tags: [Test, Image]
+feature-img: JeremyZ2/jeremyz2.github.io/assets/img/feature-img/Kaper.png
 ---
 # 诶嘿嘿嘿嘿鸡汤来喽
 <br>
