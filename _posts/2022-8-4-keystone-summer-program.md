@@ -33,7 +33,7 @@ import jieba #split Chinese sentences
 
 
 
-```Python
+```python
 import matplotlib.pyplot as plt
 %matplotlib inline
 import numpy as np
