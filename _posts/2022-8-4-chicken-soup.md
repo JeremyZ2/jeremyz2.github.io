@@ -6,8 +6,6 @@ tags: [Test, Image]
 ---
 # 诶嘿嘿嘿嘿鸡汤来喽
 <br>
-
-![Keystone stlye pattern]("JeremyZ2/jeremyz2.github.io/assets/img/keystonepattern.jpg")
 * 诶嘿嘿嘿嘿
 * 鸡汤来喽
 * 为什么不喝
