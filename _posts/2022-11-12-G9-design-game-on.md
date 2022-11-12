@@ -7,7 +7,7 @@ tags: [Test, Keystone]
 # **Code**
 ## **Timer**
 
-```Python
+```python
 import time
 #define
 global current_time
@@ -35,7 +35,7 @@ print("timer initialized")
 
 ## **Name record**
 
-```Python
+```python
 import tkinter as tk
 window = tk.Tk()
 
