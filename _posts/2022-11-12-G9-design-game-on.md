@@ -36,7 +36,7 @@ print("timer initialized")
 ```
 
 
-#Name record
+Name record
 ```python
 import tkinter as tk
 window = tk.Tk()
@@ -60,3 +60,4 @@ btnRead.pack()  # display button
     # 第9步，
 window.mainloop()
 ```
+![earth]("assets/img/feature-img/gameOnIcon.png")
