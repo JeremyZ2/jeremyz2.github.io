@@ -33,11 +33,11 @@ def Year(x):
 
 #output
 print("timer initialized")
-
+```
 
 
 #Name record
--------------------------------
+```python
 import tkinter as tk
 window = tk.Tk()
 
@@ -59,3 +59,4 @@ btnRead.pack()  # display button
 
     # 第9步，
 window.mainloop()
+```
