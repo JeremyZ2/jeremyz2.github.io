@@ -36,7 +36,7 @@ print("timer initialized")
 ```
 
 
-Name record
+**Name record**
 ```python
 import tkinter as tk
 window = tk.Tk()
