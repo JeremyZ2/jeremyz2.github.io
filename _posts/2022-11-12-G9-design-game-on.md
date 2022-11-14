@@ -25,7 +25,7 @@ def Year(x):
     while True:
         current_time = round(time.time() - starttime)
         print(current_time, " sec")
-        year = round(0.2 * current_time)
+        year = round(current_time / 12)
         print(year," year")
         #stop the timer
         if current_time == setTime:
