@@ -99,6 +99,8 @@ class cloud():
             screen.blit(self.cloud, self.cloud_rect)
 ```
 **2022/11/20～24/Friday**
+
+**2022/12/5Monday**
 *define button class*
 ```python
 import pygame
@@ -204,4 +206,3 @@ while True:
     Factory_dis = font.render(f"Factory:{Factory}", True, (220, 220, 220), (177, 177, 177))
     screen.blit(Factory_dis, (1050, 400)) 
 ```
-**2022/12/5Monday**
