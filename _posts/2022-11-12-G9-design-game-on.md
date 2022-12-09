@@ -206,3 +206,85 @@ while True:
     Factory_dis = font.render(f"Factory:{Factory}", True, (220, 220, 220), (177, 177, 177))
     screen.blit(Factory_dis, (1050, 400)) 
 ```
+**2022/12/7Wednesday**
+*more button and resources*
+```python 
+run = True
+while run:
+    #button
+    if BuildF_button.draw(screen):
+        if materials >= 1 and electricity >= 1:
+            materials = materials - 1
+            electricity = electricity -1
+            Factory = Factory + 1
+    if BuildGF_button.draw(screen):
+        if materials >= 2 and electricity >= 1:
+            materials = materials - 2
+            electricity = electricity - 1
+            G_Factory =G_Factory + 1
+
+    if BuildP_button.draw(screen):
+        if materials >= 1 and electricity >= 1:
+            materials = materials - 1
+            electricity = electricity - 1
+            Power_plant =Power_plant + 1
+
+    if BuildGP_button.draw(screen):
+        if materials >= 1 and electricity >= 1:
+            materials = materials - 2
+            electricity = electricity - 1
+            G_Power_plant =G_Power_plant + 1
+    #timer
+    current_time = round(time.time() - starttime)
+    print(current_time, " sec")
+    year = round(current_time / 12)
+    print(year, " year")
+    #display Year
+    year_dis = font.render(f"Year:{2400+year}", True, (220, 220, 220), (177, 177, 177))
+    screen.blit(year_dis,(1080,50))
+    # stop the timer
+    if current_time == setTime:
+        break
+    #resoucres calculator activate every year(12sec)
+    if current_time % 12 == 0:
+        materials = materials + Factory - 0.5 * Power_plant - 0.5 * resident
+        electricity = electricity + Power_plant - 0.5 * Factory - 0.5 * resident
+        population = population + resident
+        global_temp = global_temp + 0.001*resident + 0.005*Power_plant + 0.006*Factory
+        time.sleep(1)
+
+
+    #display resources
+    materials_dis = font.render(f"Materials:{materials}", True, (220, 220, 220), (177, 177, 177))
+    screen.blit(materials_dis, (1050, 300))
+    electricity_dis = font.render(f"Electricity:{electricity}", True, (220, 220, 220), (177, 177, 177))
+    screen.blit(electricity_dis, (1050, 325))
+    population_dis = font.render(f"Population:{population}", True, (220, 220, 220), (177, 177, 177))
+    screen.blit(population_dis, (1050, 350))
+    globalTemp_dis = font.render(f"Global temperature:{global_temp}", True, (220, 220, 220), (177, 177, 177))
+    screen.blit(globalTemp_dis, (1050, 375))
+    #building number display
+    #factory number display
+    Factory_dis = font.render(f"Factory:{Factory}", True, (220, 220, 220), (177, 177, 177))
+    screen.blit(Factory_dis, (1050, 425))
+    GFactory_dis = font.render(f"Green Factory:{G_Factory}", True, (220, 220, 220), (177, 177, 177))
+    screen.blit(GFactory_dis, (1050, 450))
+    #power plant number display
+    power_dis = font.render(f"Power Plant:{Power_plant}", True, (220, 220, 220), (177, 177, 177))
+    screen.blit(power_dis, (1050, 475))
+    Gpower_dis = font.render(f"Green Power Plant:{G_Power_plant}", True, (220, 220, 220), (177, 177, 177))
+    screen.blit(Gpower_dis, (1050, 500))
+    #resident number
+    resident_dis = font.render(f"Resident Building:{resident}", True, (220, 220, 220), (177, 177, 177))
+    screen.blit(resident_dis, (1050, 525))
+    #Background condition
+    if global_temp >= 1:
+        background = pygame.image.load("image/background1.png").convert()
+        background = pygame.transform.scale(background, (1050, 660))
+        screen.blit(background, (0, 0))
+    if global_temp >= 2 and global_temp >= 1:
+        background = pygame.image.load("image/background2.png").convert()
+        background = pygame.transform.scale(background, (1050, 660))
+        screen.blit(background, (0, 0))
+```
+The structure of the code had been changed which the timer goes in the main loop. More resources were added and a background condition was added as well. The condition track the value of global_temp and change the "background".
