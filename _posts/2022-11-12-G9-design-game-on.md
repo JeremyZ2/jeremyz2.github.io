@@ -287,4 +287,92 @@ while run:
         background = pygame.transform.scale(background, (1050, 660))
         screen.blit(background, (0, 0))
 ```
-The structure of the code had been changed which the timer goes in the main loop. More resources were added and a background condition was added as well. The condition track the value of global_temp and change the "background".
+The structure of the code had been changed which the timer goes in the main loop. More resources were added and a background condition was added as well. The condition track the value of global_temp and change the "background"
+**2022/12/9**
+*end page*
+Using Tkinter
+showing a summary of the game with different data, score, and others.
+```python
+window_end = tk.Tk()
+
+window_end.title(f"Your final score is{score}")
+window_end.geometry("400x400")
+tk.Label(window_end, text=f"Your final score is{score}").grid(row=1, column=0)
+tk.Label(window_end, text="You built:").grid(row=2, column=0)
+tk.Label(window_end, text=f"{Factory} Factory").grid(row=3, column=0)
+tk.Label(window_end, text=f"{G_Factory} Green factory").grid(row=4, column=0)
+tk.Label(window_end, text=f"{Power_plant} Power plant").grid(row=5, column=0)
+tk.Label(window_end, text=f"{G_Power_plant} GreenPower plant").grid(row=6, column=0)
+tk.Label(window_end, text=f"{resident} City").grid(row=7, column=0)
+tk.Label(window_end, text=f"Your final \n population:{population}").grid(row=2, column=1)
+tk.Label(window_end, text=f"Your development \n increased global \n temperature for:\n{global_temp}℃").grid(row=3,
+                                                                                                            column=1)
+
+tk.Label(window_end, text="ACHIEVEMENT:").grid(row=4, column=1)
+
+G_building = G_Factory + G_Power_plant
+B_building = Factory + Power_plant
+if G_building > B_building:
+    tk.Label(window_end, text="Environmentalists").grid(row=5, column=1)
+elif B_building > G_building:
+    tk.Label(window_end, text="Industry Expert").grid(row=5, column=1)
+else:
+    tk.Label(window_end, text="Balance（？）").grid(row=5, column=1)
+if not wins:
+    tk.Label(window_end, text="You loss").grid(row=6, column=1)
+
+tk.Label(window_end, text="Contact us(me):\nxiyan.zhang@keystoneacademy.cn\nJeremyZ1012@outlook.cn").grid(row=11,
+                                                                                                          column=0)
+
+window_end.mainloop()
+```
+**2022/12/13**
+New background and graphic logic
+```python
+    if 1 <= global_temp < 2:
+        background = pygame.image.load("image/background1.png").convert()
+        background = pygame.transform.scale(background, (1050, 660))
+        screen.blit(background, (0, 0))
+        event_dis = font.render("XXXX", True, (220, 220, 220), (177, 177, 177))
+        screen.blit(event_dis, (1200, 75))
+    if 2 <= global_temp < 3:
+        background = pygame.image.load("image/background2.png").convert()
+        background = pygame.transform.scale(background, (1050, 660))
+        screen.blit(background, (0, 0))
+    if 3 <= global_temp < 4:
+        background = pygame.image.load("image/background4.png").convert()
+        background = pygame.transform.scale(background, (1050, 660))
+        screen.blit(background, (0, 0))
+        population = (2 / 3) * population
+    if 4 <= global_temp < 5:
+        background = pygame.image.load("image/background5.png").convert()
+        background = pygame.transform.scale(background, (1050, 660))
+        screen.blit(background, (0, 0))
+        population = (2 / 3) * population
+    if 5 <= global_temp < 6:
+        background = pygame.image.load("image/background6.png").convert()
+        background = pygame.transform.scale(background, (1050, 660))
+        screen.blit(background, (0, 0))
+        population = (2 / 3) * population
+        resident = (3 / 4) * resident
+
+    if 6 <= global_temp < 7:
+        background = pygame.image.load("image/background7.png").convert()
+        background = pygame.transform.scale(background, (1050, 660))
+        screen.blit(background, (0, 0))
+        population = (1 / 3) * population
+        resident = (3 / 4) * resident
+        Factory = (3 / 4) * Factory
+        Power_plant = (3 / 4) * Power_plant
+    if 8 <= global_temp < 9:
+        background = pygame.image.load("image/background8.png").convert()
+        background = pygame.transform.scale(background, (1050, 660))
+        screen.blit(background, (0, 0))
+        population = (1 / 5) * population
+        resident = (1 / 5) * resident
+        Factory = (1 / 5) * Factory
+        Power_plant = (1 / 5) * Power_plant
+    if 9 <= global_temp:
+        wins = False
+        break
+```
