@@ -60,7 +60,8 @@ btnRead.pack()  # display button
     # 第9步，
 window.mainloop()
 ```
-![earth]("assets/img/feature-img/gameOnIcon.png")
+{% include aligner.html images="assets/img/feature-img/gameOnIcon.png" %}
+
 ***Developing blog***
 **2022/11/18/Friday**
 *Graphic feedback-cloud animation*
