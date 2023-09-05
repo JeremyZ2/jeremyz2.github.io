@@ -6,7 +6,7 @@ feature-img: "assets/img/feature-img/gameOnIcon.png"
 thumbnail: "assets/img/thumbnails/feature-img/gameOnIcon.png"
 tags: [Test, Keystone]
 ---
-<img src="JeremyZ2/jeremyz2.github.io/assets/img/feature-img/gameOnIcon.jpeg">
+![gameOnIcon](gameOnIcon.jpeg)
 # **Code**
 ## **Timer**
 
@@ -61,7 +61,7 @@ btnRead.pack()  # display button
     # 第9步，
 window.mainloop()
 ```
-{% include aligner.html images="assets/img/feature-img/gameOnIcon.png" %}
+
 
 ***Developing blog***
 **2022/11/18/Friday**
