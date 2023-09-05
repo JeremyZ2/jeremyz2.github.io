@@ -6,7 +6,7 @@ feature-img: "assets/img/feature-img/gameOnIcon.png"
 thumbnail: "assets/img/thumbnails/feature-img/gameOnIcon.png"
 tags: [Test, Keystone]
 ---
-![gameOnIcon](gameOnIcon.png)
+![Travel]({{ "_posts/gameOnIcon.pngd" | relative_url}})
 # **Code**
 ## **Timer**
 
