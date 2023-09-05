@@ -6,7 +6,7 @@ feature-img: "assets/img/feature-img/gameOnIcon.png"
 thumbnail: "assets/img/thumbnails/feature-img/gameOnIcon.png"
 tags: [Test, Keystone]
 ---
-{% include aligner.html images="JeremyZ2/jeremyz2.github.io/assets/img/feature-img/gameOnIcon.jpeg" %}
+{% include aligner.html images="JeremyZ2/jeremyz2.github.io/_posts/img/gameOnIcon.jpeg" %}
 
 # **Code**
 ## **Timer**
