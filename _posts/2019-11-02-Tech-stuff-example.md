@@ -6,7 +6,9 @@ feature-img: "assets/img/feature-img/circuit.jpeg"
 thumbnail: "assets/img/thumbnails/feature-img/circuit.jpeg"
 tags: [Mermaid, Highlight, Markdown]
 ---
-
+```bash
+DISPLAY=:0.0 gst-launch-1.0 nvarguscamerasrc ! 'video/x-raw(memory:NVMM), width=3280, height=2464, format=(string)NV12, framerate=(fraction)20/1' ! nvoverlaysink -e
+```
 Let's demo some code snippet, with some mermaid diagrams.
 Because if you put some code in your blog, you would at least make it:
 1. Searchable
